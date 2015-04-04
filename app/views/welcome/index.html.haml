@@ -1,2 +1,32 @@
-%h1 Welcome to Notebook!
+#banner
+  .banner_content
+    %h1 NoteBook
+    %p Online notebook for your life!
+    %button= link_to "Sign Up", new_user_registration_path
 
+#testimonial
+  .wrapper
+    %p.quote "Plain Awesome!"
+    %p.name ~ Ché
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Notes
+        %p "If you wish to travel far and fast, travel light. Take off all your envies, jealousies, unforgiveness, selfishness, and fears." —Glenn Clark
+      .callout
+        %h2 Notes
+        %p "If you wish to travel far and fast, travel light. Take off all your envies, jealousies, unforgiveness, selfishness, and fears." —Glenn Clark
+      .callout
+        %h2 Notes
+        %p "If you wish to travel far and fast, travel light. Take off all your envies, jealousies, unforgiveness, selfishness, and fears." —Glenn Clark
+
+#bottom_cta
+  .wrapper
+    %h2 Hey There
+    %p Have access to your notes online!
+    %button= link_to "Sign Up", new_user_registration_path
+
+%footer
+  %p &copy; CBS VI 360
