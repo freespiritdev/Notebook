@@ -2,6 +2,10 @@
 
 Notebook app for jotting down ideas anywhere you have access to the internet!
 
+![alt tag](https://cloud.githubusercontent.com/assets/6601494/6995975/c2924034-db38-11e4-8be9-7ceaed8666cb.jpg)
+
+![alt tag](https://cloud.githubusercontent.com/assets/6601494/6995974/c288d256-db38-11e4-8591-ebefa921bdd0.jpg)
+
 ![alt tag](https://cloud.githubusercontent.com/assets/6601494/6995934/eec7ac36-db36-11e4-89ac-5f99b39f0952.jpg)
 
 ![alt tag](https://cloud.githubusercontent.com/assets/6601494/6995935/eec921f6-db36-11e4-9040-0cc56f1ef1ac.jpg)
