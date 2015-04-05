@@ -1,6 +1,6 @@
 == README
 
-Notebook app for jotting down ideas anywhere!
+Notebook app for jotting down ideas anywhere you have access to the internet!
 
 ![alt tag](https://cloud.githubusercontent.com/assets/6601494/6995934/eec7ac36-db36-11e4-89ac-5f99b39f0952.jpg)
 
