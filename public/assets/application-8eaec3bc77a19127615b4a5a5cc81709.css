@@ -1,0 +1,316 @@
+/*
+
+ */
+@import url(normalize.css);
+/* line 11, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 16, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+body {
+  padding-top: 4.5rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* line 21, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+.wrapper_with_padding {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3.5rem 0;
+}
+
+/* line 32, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 37, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 41, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+button, .button {
+  border: none;
+  outline: none;
+  background: #0d70ba;
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+}
+/* line 47, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+button a, .button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 53, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+.button {
+  color: white;
+  margin: 2rem 0;
+}
+
+/* line 58, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+a {
+  color: #0d70ba;
+  text-decoration: none;
+}
+/* line 61, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+a:hover {
+  color: #2b2e2e;
+}
+
+/* line 66, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+header {
+  background: #2b2e2e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.75rem 0;
+  border-bottom: 7px solid #0d70ba;
+}
+/* line 73, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+header .header_inner {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 76, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+header .header_inner #logo {
+  display: inline-block;
+  width: 10rem;
+  float: left;
+}
+/* line 81, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+header .header_inner nav {
+  float: right;
+}
+/* line 83, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+header .header_inner nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+/* line 89, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+header .header_inner nav a:hover {
+  color: #0d70ba;
+}
+
+/* line 97, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+footer {
+  background: #2b2e2e;
+  width: 100%;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 104, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+footer p {
+  margin: 0;
+  font-size: .85rem;
+}
+
+/* line 110, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #c0c1c1;
+  border-radius: .4rem;
+}
+
+/* line 117, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+input[type="text"], input[type="email"], input[type="password"] {
+  height: 40px;
+}
+
+/* line 121, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/global.css.scss */
+textarea {
+  min-height: 200px;
+}
+
+/* line 2, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#notes .note {
+  background: #2b2e2e;
+  width: 30%;
+  min-height: 200px;
+  margin: 1rem 1%;
+  padding: 1.5rem 2.5%;
+  float: left;
+  border-radius: .4rem;
+  position: relative;
+}
+/* line 11, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#notes .note .title {
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  letter-spacing: 1px;
+}
+/* line 17, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#notes .note .date {
+  position: absolute;
+  bottom: .25rem;
+  left: 8.5%;
+  color: #0d70ba;
+  font-size: .85rem;
+}
+
+/* line 28, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#note_show .title {
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E9E9E9;
+}
+/* line 35, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#note_show p {
+  font-size: 1.375rem;
+  line-height: 1.75;
+}
+/* line 39, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#note_show .buttons {
+  margin-top: 3rem;
+}
+/* line 41, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/notes.css.scss */
+#note_show .buttons a.button {
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #0d70ba;
+  border: 5px solid #E9E9E9;
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+/* line 1, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#banner {
+  background-image: url("/assets/home4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  min-height: 500px;
+  display: table;
+}
+/* line 9, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#banner .banner_content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 13, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#banner .banner_content h1 {
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3.5rem;
+  margin: 0;
+}
+/* line 19, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#banner .banner_content p {
+  font-size: 1.5rem;
+  margin: 0 0 2.5rem 0;
+  color: rgba(250, 250, 250, 0.5);
+}
+
+/* line 27, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#testimonial {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #afb0b0;
+  padding: 3.5rem 0;
+}
+/* line 32, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#testimonial .quote {
+  margin: 0 0 .5rem 0;
+}
+/* line 35, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#testimonial .name {
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2b2e2e;
+  margin: 0;
+  font-size: .85rem;
+}
+
+/* line 43, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#callouts {
+  background-image: url("/assets/home5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  min-height: 400px;
+  display: table;
+}
+/* line 51, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#callouts .callout_inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 55, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#callouts .callout {
+  text-align: center;
+  width: 33.3333%;
+  padding: 1.5rem 2.5%;
+  float: left;
+}
+/* line 60, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#callouts .callout i {
+  font-size: 3rem;
+  color: #0d70ba;
+}
+/* line 64, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#callouts .callout h2 {
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0;
+}
+/* line 69, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#callouts .callout p {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+/* line 75, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#bottom_cta {
+  text-align: center;
+  padding: 7.5rem 0;
+}
+/* line 78, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#bottom_cta h2 {
+  font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2b2e2e;
+  font-size: 3rem;
+  margin: 0;
+}
+/* line 84, /Users/cheri/rails-dev-box/code/notebook/app/assets/stylesheets/welcome.css.scss */
+#bottom_cta p {
+  font-size: 1.25rem;
+  margin: 0 0 2.5rem 0;
+  color: #a7a8a8;
+}
